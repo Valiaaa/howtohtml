@@ -1,0 +1,125 @@
+css
+背景颜色and图片 图片尺寸
+import font
+class and id
+
+post website on github
+
+column
+cursor
+
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="script.js"></script>
+	<title>How To Html</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column left">
+            <h3>01.</h3>
+        </div>
+        <div class="column right">
+            <h1 id="setupt">+ 准备工作</h1>
+            <h1 id="setuptc">- 准备工作</h1>
+            <p id="setup">
+                <input type="checkbox">建立GitHub账号<br>
+                <input type="checkbox">下载<a href="https://desktop.github.com" target="_blank">GitHub Desktop</a><br>
+                <input type="checkbox">下载Coding软件（eg. <a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code</a>）<br>
+                <input type="checkbox">开启Safari<span id="inspect">检查元素（Inspect Element）</span>功能<br>
+                <img src="pic/startup/inspect pic.png" id="inspectpic">
+            </p>
+            
+            <h1 id="createt">+ 创建网站</h1>
+            <h1 id="createtc">- 创建网站</h1>
+            <p id="create">
+                <input type="checkbox">在GitHub里建立Repository（右上角 + 内）<br>
+                <input type="checkbox">填写Repository Name（填写你想要的网站名称，不能和之前创建过的重复）<br>
+                &nbsp &nbsp &nbsp * 可以设置成Public没关系，意思就是大家可以看到你的码，免费账户Private码的数量好像只有一个<br>
+                &nbsp &nbsp &nbsp * README File一般用来解释自己分享的开源编程，所以通常情况下不用添加<br>
+                <input type="checkbox">点击创建<br>
+                <input type="checkbox">在新跳转的页面点击Set up in Desktop<br>
+                <input type="checkbox">在Github Desktop里确认本地路径，点击克隆<br>
+            </p>
+
+            <h1 id="documentt">+ 建立文档</h1>
+            <h1 id="documenttc">- 建立文档</h1>
+            <p id="document">
+                <input type="checkbox">点击在coding软件中打开<br>
+                <input type="checkbox">在软件左侧<span id="createfile">新建</span>2个基础文件<br>
+                <img src="pic/startup/create file.png" id="createfilepic">
+                &nbsp &nbsp &nbsp * index.html是进入网页后默认的主页面<br>
+                &nbsp &nbsp &nbsp * style.css是你为这个页面设定视觉的文档<br>
+                &nbsp &nbsp &nbsp * 之后还会涉及到javascript文件，但目前还不急，只需要建立以上两个就好<br>
+                <input type="checkbox">点击打开本地文件夹，双击其中的index.html文件，就可以在浏览器中实时看到你的文档的变化<br>
+            </p>
+
+            <h1 id="htmldoct">+ 开始写简单的文档吧</h1>
+            <h1 id="htmldoctc">- 开始写简单的文档吧</h1>
+            <p class="htmldoc">
+                <input type="checkbox">一个html文档基本由四个部分组成：head, style, body, 和script。其中，style可以用后缀为css的文档代替，而script则可以用后缀为js的文档来代替。<br>
+                &nbsp &nbsp &nbsp * 如果你选择用jQuery写js的话，记得把js文档放在jQuery link的下方，不然它不work<br>
+                <input type="checkbox">code里的每一个部分都是由<code>&lt;部分名&gt;&lt;/部分名&gt;</code>开始与结束。<br>
+                <input type="checkbox">html文档里的所有内容都要写在<code>&lt;!DOCTYPE html&gt;&lt;/html&gt;</code>之中。<br>
+                <input type="checkbox">随后，就是由<code>&lt;head&gt;&lt;/head&gt;</code>开始与结束的head部分。<br>
+                <input type="checkbox">head里会包括：基础浏览器适配设置，链接（比如网站自定义的小图标，和css文件），script（比如jQuery版本网址，js文档），以及网页自定义标题。<br>
+                &nbsp &nbsp &nbsp * 比如，本网页head里的内容是：<br>
+            </p>
+            <p class="htmldoc" style="padding-left:44px; margin-top: -48px;"><code><br>
+                &lt;meta charset="UTF-8"><br>
+                &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;<br>
+                &lt;meta name="description" content=""&gt;<br>
+                &lt;meta name="viewport" content="width=device-width"&gt;<br>
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                &lt;link rel="icon" href="icon.png"&gt;<br>
+                &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;<br>
+                &lt;script src="https://code.jquery.com/jquery-3.5.0.js"&gt;&lt;/script&gt;<br>
+                &lt;script src="script.js"&gt;&lt;/script&gt;<br>
+                &lt;title&gt;How To Html&lt;/title&gt;<br></code>
+            </p>
+            <p class="htmldoc" style="padding-left: 44px; margin-top: -14px;">其中，需要自行修改的部分是icon的link以及网页的title。</p>
+            <p class="htmldoc" style="margin-top: -20px;">
+                <input type="checkbox">随后就是最为主要的body部分。这里囊括了你想在网页里展示的所有内容。其中，你可以用很多种元素来定义一段内容（的视觉形式）。<br>
+                &nbsp &nbsp &nbsp * 你可以在css里分别定义这些元素的属性，来让他们拥有不同的eg.颜色，字体，字号，对其，hover效果等<br>
+                &nbsp &nbsp &nbsp * 比较常用的元素有：p（paragraph，代表普通正文）；h1-6（正文之外的特殊文字格式，如果你需要更多格式还可以自己额外用“.编号”来创建）；div（区域，你可以把很多不同格式的文字都放在这一个区域里面，然后对于整个区域进行class或者id的编辑。这里需要注意的是，div默认是新的区域，所以会换行，并且会受默认margin和padding的影响）；span（没有实质性意义，也不会让范围内的内容和前后文分离，适用于你想在一段连贯的文字里让几个特殊的文字有特别的css）。<br>
+                &nbsp &nbsp &nbsp * 几段文字之间的回车并不会被coding软件识别，所以需要用<code>&lt;br&gt;</code>来手动分割一段文字。类似的，大于一个的空格也不会被多次识别，所以需要用<code>&amp;nbsp</code>来代替剩余的空格。<br>
+            </p>
+            <h2 class="htmldoc">练习：更改网页的名称，并用至少两种文字格式在网页上写下自定义内容。并且其中一种格式的文字需要超过两个自定义分行。</h2>
+
+            <p class="htmldoc">
+                <input type="checkbox">如果想要在网页中加入图片，我们首先需要将图片转移到code的本地文件夹中。如果图片较少可以直接放在文件夹里，如果比较多建议新建文件夹来给图片归档。<br>
+                <input type="checkbox">直接使用<code>&lt;img src="图片名+后缀"&gt;</code>就可以置入图片了。<br>
+                &nbsp &nbsp &nbsp * 如果图片在子文件夹中，则需要写子文件夹名/图片名+后缀。<br>
+                &nbsp &nbsp &nbsp * 如果图片和html文件在不同的文件夹，但是共处一个母文件夹，则需要写../图片文件夹名/图片名+后缀。<br>
+                &nbsp &nbsp &nbsp * 在定义完图片路径后，一样可以给图片加上class或者id，或者直接加上style来设置规格（比如如果这张照片只需要设定宽度，并且这个设定和其他所有内容都不重复，那么可以直接用style；如果有多个内容都会需要一样的style，那么建议给它们都加上同一个class，然后在css文档里统一规定）。<br>
+                <input type="checkbox">如果想要在网页中加入超链接，可以直接使用<code>&lt;a href="目标网址"&gt;超链接替代文字&lt;/a&gt;</code>。<br>
+                &nbsp &nbsp &nbsp * 然而，如果这么link，该目标网址会直接在同一个tab打开，这意味着它会覆盖原来的网页。如果想要目标网址在新标签页里打开，那么需要在“目标网址”后加上<code>target="_blank"</code>。<br>
+                &nbsp &nbsp &nbsp * 这个link功能不只能链接网页，还能够链接你所创建的其他html文件。你只需要在href=后面写上“html的路径”即可。<br>
+            </p>
+            <h2 class="htmldoc">练习：在刚刚的网页中添加至少一张图片，和至少一个超链接。</h2>
+
+            <h1 id="cssdoct">+ 用css更改元素视觉</h1>
+            <h1 id="cssdoctc">- 用css更改元素视觉</h1>
+
+            <h1 id="uploadt">+ 将本地网页上传到网络上吧</h1>
+            <h1 id="uploadtc">- 将本地网页上传到网络上吧</h1>
+            <p class="upload">
+                <input type="checkbox">点开GitHub Desktop的页面，<br>
+                <input type="checkbox">如果左下角的Summery写了required（一般你进行了一些大更新后就会需要你概括一下你做了啥），那么你可以随便打个啥敷衍了事，也可以用几个词大致介绍一下你的更新。<br>
+                &nbsp &nbsp &nbsp * 最新的Summery会显示在你GitHub coding页面的文件旁边，所以可以稍微写一下。<br>
+                <input type="checkbox">点击蓝了的Commit to Main<br>
+                <input type="checkbox">完成！所有人都可以通过网络看到你的网站啦：）<br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
