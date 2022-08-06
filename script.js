@@ -61,6 +61,18 @@ $("#htmldoctc").click(function(){
     $(".htmldoc").hide();
 });
 
+$("#uploadt").click(function(){
+    $(this).hide();
+    $("#uploadtc").show();
+    $(".upload").show();
+});
+
+$("#uploadtc").click(function(){
+    $(this).hide();
+    $("#uploadt").show();
+    $(".upload").hide();
+});
+
 
 
 });
