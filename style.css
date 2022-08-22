@@ -16,7 +16,7 @@ body {
     font-family: ShangheiXi, sans-serif;
     font-size: 16pt;
     line-height: 24pt;
-    padding-top: 20px;
+    padding-top: 12px;
     background-color: white;
 }
 
@@ -68,7 +68,7 @@ h3 {
     font-family: ShangheiCu, sans-serif;
     font-size: 120pt;
     line-height: 100pt;
-    margin: -4;
+    margin: -4px;
     padding-left: 2%;
     color: rgb(110, 236, 0);
 }
