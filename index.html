@@ -1,5 +1,6 @@
 <!-- 预支付了4小时，已上0小时。
 
+class and id
 display
 float
 overflow
@@ -155,13 +156,28 @@ jquery -->
                 max-height/width：最大长宽。如果你设置了一个特别大的width，那么当浏览器宽度变窄的时候框内的内容可能会溢出；而如果你设置的是max- width，那么它会根据浏览器的宽度自动缩短，避免用户需要横向滑动页面。<br></code></p>
                 <h2 class="cssdoc">练习：设置有边框的文字的margin和padding，将它的最大宽度设置为百分之六十。</h2>
                 <p class="cssdoc" style="padding-left:50px;"><code>
+                font-family：字体，可以用浏览器支持的内置字体，也可以导入自定义字体。格式为：字体名称，serif/sans-serif。<br>
+                font-size：字体大小，可以用常用单位定义。<br>
+                line-height：行间距，同样用常用单位定义。<br>
                 text-align：文字排列，可以设置left/center/right/justify每行宽度相同。但是justify并不常用于传统html的设计中，基本左中右就够用。<br>
                 </code></p>
-                <h2 class="cssdoc">练习：将边框内的文字设为居中排列。</h2>
+                <h2 class="cssdoc">练习：将边框内的文字设为居中排列，并更改字号和行间距。</h2>
             <p class="cssdoc" style="margin-top: -14px;">
-                <input type="checkbox">class和id<br>
-                <input type="checkbox">导入字体<br>
+                <input type="checkbox">你可以通过例如Google Font/Adobe Font/本地字体等方式来导入自定义字体。<br>
+                <input type="checkbox">如果想要导入本地字体的话，可以先把字体复制到本地的文件夹内，然后在css文件中输入：<br></p>
+            <div class="cssdoc" style="padding-left:132px; margin-top: -16px;"><code>
+                 @font-face { <br>
+                    font-family: '自拟字体名称'; <br>
+                    src: url('本地字体路径'); <br>
+                    }
+            </code></div>
+            <p class="cssdoc">
+                <input type="checkbox">或者，在<a href="https://fonts.google.com" target="_blank" class="a1">Google Font</a>中，点进你想要的字体，在Style板块中确认你想要的字体粗细，并点击右边的加号。随后，在右上角的Selected Family页面中点击@import的选项，将下面的代码黏贴进css文档里，并根据给定的字体名称来选用。<br>
+                <input type="checkbox">亦或者，在<a href="https://fonts.adobe.com/fonts" target="_blank" class="a1">Adobe Font</a>中（需要登录），点进你想要的字体，点击Add to Web Project，新建或者选择已有project，选择你想要的粗细，点击save，就可以看到导入code了。最后根据给定字体名称使用。<br>
             </p>
+            <h2 class="cssdoc">练习：导入一个自定义字体并使用。</h2>
+
+
 
             <h1 id="uploadt">+ 将本地网页上传到网络上吧</h1>
             <h1 id="uploadtc">- 将本地网页上传到网络上吧</h1>

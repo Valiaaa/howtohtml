@@ -166,7 +166,7 @@ input[type="checkbox"] {
 
 /*segments*/
 
-#bf2, #setup, #setuptc, #create, #createtc, #document, #documenttc, .htmldoc, #htmldoctc, .upload, #uploadtc {
+#bf2, #setup, #setuptc, #create, #createtc, #document, #documenttc, .htmldoc, #htmldoctc, .upload, #uploadtc, .cssdoc, #cssdoctc {
     display: none;
 }
 
