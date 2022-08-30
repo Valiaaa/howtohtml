@@ -139,6 +139,10 @@ input[type="checkbox"] {
     height:20px;
     }
 
+.container {
+    width: 71%;
+}
+
 .container:after {
 	content: "";
 	display: table;
@@ -146,20 +150,21 @@ input[type="checkbox"] {
 }
 
 .column {
-    float:left;
+    float: left;
 }
 
 .left {
-    width: 18%;
+    width: 30%;
 }
 
 .middle {
-    width: 52%;
+    width: 70%;
 }
 
 .right {
+    position: fixed;
     width: 28%;
-    padding-left: 2%;
+    left: 73%;
 }
 
 
